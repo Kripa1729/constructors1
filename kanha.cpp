@@ -20,6 +20,13 @@ complex::complex(int x) {
   a = x;
   b = 0;
 }
+/* Ways of using copy 
+constructor:
+Board tempBoard = board;
+Board tempBoard(board);
+Board* tempBoard
+= new Board(board);
+*/
 complex::complex(int x, int y) {
   a = x;
   b = y;
