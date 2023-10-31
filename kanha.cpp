@@ -10,6 +10,7 @@ public:
   complex(int);
   complex(int, int);
   complex(const complex &);
+  ~complex();
 };
 complex::complex() {
   a = 0;
@@ -26,6 +27,9 @@ complex::complex(int x, int y) {
 complex::complex(const complex &c) {
   a = c.a;
   b = c.b;
+}
+complex::~complex(){
+    cout<<"Destructor is being called";
 }
 int main() {
   complex c1;
